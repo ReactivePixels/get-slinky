@@ -1,9 +1,10 @@
-title                   : Swanky Docs
-repo                    : https://github.com/swanky-docs/generator-swanky
+title                   : Slinky
+repo                    : https://github.com/ReactivePixels/slinky
 version                 : 0.0.0
 src                     : src
 theme                   : src/themes/swanky-docs-theme
 output                  : docs
+serverPath              : get-slinky
 
 sections                :
 

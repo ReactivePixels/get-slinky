@@ -18,11 +18,12 @@
     "prismjs": "1.5.0"
   },
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "backstopjs": "1.3.5",
     "http-server": "0.9.0",
     "npm-run-all": "2.1.2",
     "rimraf": "2.5.2",
     "swanky-server": "2.1.0",
-    "webpack": "2.1.0-beta.21",
-    "backstopjs": "1.3.5"
+    "webpack": "2.1.0-beta.21"
   }
 }
