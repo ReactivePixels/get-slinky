@@ -1,10 +1,10 @@
-// Quick button reset
 button
   text-shadow none
   font-weight 600
   border none
 
 .btn-primary
+  position relative
   text-decoration none
   display inline-block
   text-align center
@@ -35,6 +35,7 @@ button
     outline 0
 
 .btn-default
+  position relative
   text-decoration none
   display inline-block
   text-align center
@@ -74,23 +75,21 @@ button
 .btn-download
   transition: all 250ms
   opacity 0.75
-  display inline-block
+  display block
   background none
   color #fff
   font-weight 300
-  padding 20px 80px
+  padding 20px 40px
   font-style normal
-  border-right 1px solid darken($brand-secondary, 10%)
 
   .os-title
     font-size 1.6rem
+
   .os-icon
     margin 0 auto 6px auto
+
   .download-size
     font-size 1rem
-
-  &:last-child
-    border-right none
 
   &:visited
     color #eee
@@ -100,3 +99,23 @@ button
     text-decoration none
     color #fff
 
+  @media screen and (min-width: $screen-is-bigger-than-mobile)
+    display inline-block
+    border-right 1px solid darken($brand-secondary, 10%)
+    padding 20px 40px
+
+    &:last-child
+      border-right none
+
+  @media screen and (min-width: $screen-is-bigger-than-tablet)
+    padding 20px 80px
+
+a
+  > .github
+    display inline-block
+    width 25px
+    height 25px
+    background-size @width @height
+    position absolute
+    top 4px
+    left 4px

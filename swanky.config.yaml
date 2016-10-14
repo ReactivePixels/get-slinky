@@ -9,4 +9,4 @@ serverPath              : get-slinky
 sections                :
 
   - title               : Welcome
-    content             : src/content/splash/**/*.html
+    content             : src/content/**/*.*
