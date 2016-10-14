@@ -70,3 +70,33 @@ button
 
   @media screen and (min-width: $screen-is-bigger-than-tablet)
     margin 40px 0
+
+.btn-download
+  transition: all 250ms
+  opacity 0.75
+  display inline-block
+  background none
+  color #fff
+  font-weight 300
+  padding 20px 80px
+  font-style normal
+  border-right 1px solid darken($brand-secondary, 10%)
+
+  .os-title
+    font-size 1.6rem
+  .os-icon
+    margin 0 auto 6px auto
+  .download-size
+    font-size 1rem
+
+  &:last-child
+    border-right none
+
+  &:visited
+    color #eee
+
+  &:hover
+    opacity 1
+    text-decoration none
+    color #fff
+

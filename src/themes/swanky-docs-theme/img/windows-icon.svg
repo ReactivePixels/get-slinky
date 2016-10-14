@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>social-windows</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-193.000000, -1099.000000)" fill="#FFFFFF">
+            <g id="Platforms" transform="translate(0.000000, 1041.000000)">
+                <g id="Windows" transform="translate(178.000000, 58.000000)">
+                    <g id="social-windows" transform="translate(15.000000, 0.000000)">
+                        <g id="Layer_1">
+                            <g id="Group">
+                                <polygon id="Shape" points="36 18.7232143 16.0714286 18.7232143 16.0714286 33.1071429 36 36 36 18.7232143"></polygon>
+                                <polygon id="Shape" points="14.7857143 18.7232143 0 18.7232143 0 30.7767857 14.7857143 32.9223214 14.7857143 18.7232143"></polygon>
+                                <polygon id="Shape" points="36 0 16.0714286 2.84464286 16.0714286 17.4375 36 17.4375 36 0"></polygon>
+                                <polygon id="Shape" points="14.7857143 3.02946429 0 5.14285714 0 17.4375 14.7857143 17.4375 14.7857143 3.02946429"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
