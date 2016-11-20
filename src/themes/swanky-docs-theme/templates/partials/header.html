@@ -8,8 +8,6 @@
 
     <title>{$ meta.title $} - {$ title $}</title>
     <link rel="icon" href="{$ meta.serverPath if meta.production else '/' $}favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="theme.css">
-    <link rel="stylesheet" type="text/css" href="docs.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,600,600italic,300' rel='stylesheet' type='text/css'>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 </head>
@@ -20,5 +18,7 @@
       <a href="{$ meta.repository $}" title="{$ siteTitle $} Github Repo" target="_blank" class="{$ styles.github $}"></a>
     {% endif %}
     <a href="/" class="{$ styles.brand $}"><div class="{$ styles.logo $}"></div></a>
-    <p class="{$ styles.intro $}">Slinky takes the hard work out of managing your npm link dependencies.</p>
   </header>
+  <div class="{$ styles['intro-wrapper'] $}">
+    <p class="{$ styles.intro $}">Slinky takes the hard work out of managing your npm link dependencies.</p>
+  </div>

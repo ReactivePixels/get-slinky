@@ -1,11 +1,12 @@
 import _ from 'lodash';
-import PIXI from 'pixi.js';
-PIXI.utils._saidHello = true; // remove console log from PIXI.js
+const PIXI = require('pixi.js');
+PIXI.utils.skipHello(); // remove console log from PIXI.js
 // Cells
 const cellSize = 8;
 const cellSpacing = 8;
-const cellColour = 0xD74D4B;
-const baseColour = 0xD04945;
+const cellColour = 0x323232;
+const highlightColours = [0xF89600, 0xB7F900, 0xF6D200, 0x00E0E9];
+const baseColour = 0x000000;
 const container = document.getElementById('masthead');
 const renderer = PIXI.autoDetectRenderer(container.offsetWidth, container.offsetHeight, { antialias: false, transparent: false, resolution: 1 });
 const stage = new PIXI.Container();
@@ -28,17 +29,20 @@ function createGrid() {
   for (let x = 0 ; x < cols; x++) {
     cells[x] = [];
     for (let y = 0 ; y < rows; y++) {
+      const randomiser = Math.ceil(Math.random() * 60);
 
-      addCell(x, y, cellColour);
+      const borderColour = (randomiser === 60) ? highlightColours[Math.floor(Math.random() * highlightColours.length)] : cellColour;
+      addCell(x, y, borderColour);
     }
   }
 
   renderer.render(stage);
 }
 
-function addCell(x, y, colour) {
+function addCell(x, y, borderColour) {
   let cell = new PIXI.Graphics();
-  cell.beginFill(colour);
+  // cell.beginFill(borderColour);
+  cell.lineStyle(1, borderColour);
   cell.drawRect(0, 0, cellSize, cellSize);
   cell.x = cellSpacing + (cellSpacing * x) + (cellSize * x);
   cell.y =  cellSpacing + (cellSpacing * y) + (cellSize * y);
@@ -54,5 +58,7 @@ let update = _.debounce(() => {
   cells = [];
   createGrid();
 }, 10);
+
+update();
 
 module.exports = setup;
