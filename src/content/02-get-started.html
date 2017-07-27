@@ -5,23 +5,23 @@
 </div>
 <div class="{$ styles['callout-titlebar'] $}">Download</div>
 <div class="{$ styles.callout $} {$ styles['callout-primary'] $}">
-  <a href="#" class="{$ styles['btn-download'] $}">
+  <!-- <a href="#" class="{$ styles['btn-download'] $}">
     <div class="{$ styles['os-icon'] $} {$ styles['windows-icon'] $}"></div>
     <div class="{$ styles['os-title'] $}">Windows</div>
     <div class="{$ styles['download-size'] $}">28.4mb</div>
-  </a>
+  </a> -->
 
-  <a href="#" class="{$ styles['btn-download'] $}">
+  <a href="https://github.com/ReactivePixels/slinky/releases/download/v0.1.0/slinky-v0.1.0.dmg" class="{$ styles['btn-download'] $}">
     <div class="{$ styles['os-icon'] $} {$ styles['apple-icon'] $}"></div>
     <div class="{$ styles['os-title'] $}">OSX</div>
-    <div class="{$ styles['download-size'] $}">28.4mb</div>
+    <div class="{$ styles['download-size'] $}">43.9mb</div>
   </a>
 
-  <a href="#" class="{$ styles['btn-download'] $}">
+  <!-- <a href="#" class="{$ styles['btn-download'] $}">
     <div class="{$ styles['os-icon'] $} {$ styles['linux-icon'] $}"></div>
     <div class="{$ styles['os-title'] $}">Linux</div>
     <div class="{$ styles['download-size'] $}">28.4mb</div>
-  </a>
+  </a> -->
 </div>
 
 <div class="{$ styles['steps-container'] $}">
@@ -32,7 +32,7 @@
         <div class="{$ styles['hexagon-md'] $} {$ styles.blue $}">1</div>
       </div>
       <h4>Install Slinky</h4>
-      <p>Slinky is available in 3 flavours for Windows, OSX and Linux. Download and install the appropriate version for your platform.</p>
+      <p>Slinky is available for OSX 3 (Windows and Linux coming soon). Download and install the appropriate version for your platform.</p>
     </div>
 
     <div class="{$ styles.step $}">
@@ -43,7 +43,7 @@
       <p>You will need to symlink the modules you would like to use. Check out the <a href="https://docs.npmjs.com/cli/link" target="_blankl">npm documentation</a> for further details.</p>
       <div class="{$ styles['code-well'] $}">
         <pre><code>cd path/to/my-npm-package</code></pre>
-        <pre><code>npm link</code></pre>
+        <pre><code>[npm | yarn] link</code></pre>
       </div>
     </div>
 
